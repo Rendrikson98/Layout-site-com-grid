@@ -1,0 +1,46 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+.menu{
+    background: gray;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-gap: 5px
+}
+
+.conteudo1{
+    background: blanchedalmond;
+    max-width: 100%;
+    height: 600px;
+}
+
+.conteudo2{
+    background: brown;
+    max-width: 100%;
+    height: 600px;
+}
+
+.anuncio{
+    
+    background: blue;
+    max-width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 700px){
+    .body{
+        grid-template-columns: 1fr;
+    }
+
+    .anuncio{
+        height: 100px;
+    }
+}
